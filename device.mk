@@ -252,6 +252,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+PRODUCT_BOOT_JARS += \
+    android.hidl.manager-V1.0-java
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0
