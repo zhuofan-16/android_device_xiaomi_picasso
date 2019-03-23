@@ -168,6 +168,7 @@ TARGET_USES_MKE2FS := true
 
 # SEPolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR := $(DEVICE_PATH)/sepolicy/private
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 include device/qcom/sepolicy/SEPolicy.mk
 
 # RIL
