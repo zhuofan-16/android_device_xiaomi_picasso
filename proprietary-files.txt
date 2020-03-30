@@ -138,7 +138,7 @@ lib64/vendor.qti.hardware.fm@1.0.so
 
 # IMS
 # ims.apk: patched ImsServiceStateReceiver.shallShowHDIcon() to always return false
--product/priv-app/ims/ims.apk|ce4b30992c383ded08eeae50d9c7c46bec3093d8
+-product/priv-app/ims/ims.apk|600c6d03c03f88f35c51ba8e6b1a4cb7d70b94e6
 product/lib64/libdiag_system.so
 product/lib64/libimscamera_jni.so
 product/lib64/libimsmedia_jni.so
@@ -162,7 +162,8 @@ vendor/lib64/soundfx/libdirac.so
 vendor/lib/soundfx/libdirac.so
 vendor/lib/soundfx/libmisoundfx.so
 
-# Telephony
+# Telephony (qti-telephony-common) - from LA.UM.8.9.r1-08400-SM6xx.0
+product/framework/qti-telephony-common.jar|411e1eda313b38205dd89a012d898f74e2ddaee0
 etc/permissions/privapp-permissions-qti.xml
 etc/permissions/qti_libpermissions.xml
 etc/permissions/qti_permissions.xml
@@ -174,7 +175,6 @@ product/etc/permissions/telephonyservice.xml
 product/framework/qcrilhook.jar
 product/framework/QtiTelephonyServicelibrary.jar
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-product/framework/qti-telephony-common.jar|d53c26a3df5ae5d3218caca05a89dcbaa9a1810f
 
 # WiFi Display
 bin/wfdservice
