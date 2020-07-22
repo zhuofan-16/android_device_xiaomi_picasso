@@ -30,10 +30,13 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 # Build info
-BUILD_FINGERPRINT := "Redmi/picasso/picasso:10/QKQ1.191117.002/V11.0.11.0.QGICNXM:user/release-keys"
+BUILD_FINGERPRINT := "Redmi/picasso/picasso:10/QKQ1.191222.002/20.7.6:user/release-keys"
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=picasso \
     PRODUCT_NAME=picasso \
-    PRIVATE_BUILD_DESC="picasso-user 10 QKQ1.191117.002 V11.0.11.0.QGICNXM release-keys"
+    PRIVATE_BUILD_DESC="picasso-user 10 QKQ1.191222.002 20.7.6 release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
