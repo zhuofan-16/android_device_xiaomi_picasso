@@ -124,6 +124,3 @@ BOARD_VNDK_VERSION := current
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_picasso
-TARGET_RECOVERY_DEVICE_MODULES := libinit_picasso

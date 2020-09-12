@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rr_picasso.mk
+    $(LOCAL_DIR)/exthm_picasso.mk

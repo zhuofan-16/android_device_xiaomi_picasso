@@ -113,7 +113,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
-
-# Init scripts
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.picasso.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.picasso.rc
