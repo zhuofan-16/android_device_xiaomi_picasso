@@ -187,7 +187,6 @@ lib64/libqdMetaData.so
 lib64/libqdMetaData.system.so
 
 # Telephony (qti-telephony-common) - from LA.UM.8.9.r1-08400-SM6xx.0
-product/framework/qti-telephony-common.jar|411e1eda313b38205dd89a012d898f74e2ddaee0
 etc/permissions/privapp-permissions-qti.xml
 etc/permissions/qti_libpermissions.xml
 etc/permissions/qti_permissions.xml
