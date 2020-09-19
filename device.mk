@@ -55,6 +55,10 @@ PRODUCT_PACKAGES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     BluetoothQti
+
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
     
 # Charging
 PRODUCT_PACKAGES += \
