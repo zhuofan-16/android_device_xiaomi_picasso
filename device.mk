@@ -83,6 +83,10 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
     vendor/qcom/opensource/commonsys/system/bt/conf
+
+# Camera
+PRODUCT_PACKAGES += \
+    android.hidl.memory.block@1.0
     
 # Charging
 PRODUCT_PACKAGES += \
