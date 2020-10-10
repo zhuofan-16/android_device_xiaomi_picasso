@@ -10,7 +10,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from picasso device
 $(call inherit-product, device/xiaomi/picasso/device.mk)
-
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
@@ -30,14 +29,14 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 # Build info
-BUILD_FINGERPRINT := "Redmi/picasso/picasso:10/QKQ1.191222.002/V12.0.2.0.QGICNXM:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys"
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=picasso \
     PRODUCT_NAME=picasso \
-    PRIVATE_BUILD_DESC="picasso-user 10 QKQ1.191222.002/V12.0.2.0.QGICNXM release-keys"
+    PRIVATE_BUILD_DESC="coral-user 11 RP1A.201005.004 6782484 release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 #FaceUnlock
