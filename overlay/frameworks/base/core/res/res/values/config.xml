@@ -654,4 +654,8 @@
 
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
     <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/battery/fastchg_status</string>
+    <!-- Wi-Fi 802.11r support -->
+    <bool translatable="false" name="config_wifi_fast_bss_transition_enabled">true</bool>    
+    <!-- If Smart charging supported by kernel and device sepolicy -->
+    <bool name="config_smartChargingAvailable">true</bool>
 </resources>
