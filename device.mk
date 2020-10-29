@@ -1,8 +1,6 @@
-#
-# Copyright (C) 2020 AICP
+# Copyright (C) 2021 AICP
 #
 # SPDX-License-Identifier: Apache-2.0
-#
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
@@ -191,6 +189,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0
 
 # WiFi Display
 PRODUCT_PACKAGES += \
