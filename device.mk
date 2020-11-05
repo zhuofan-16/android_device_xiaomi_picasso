@@ -112,3 +112,8 @@ PRODUCT_BOOT_JARS += \
 # Camera
 PRODUCT_PACKAGES += \
     Snap
+# Android 11 stuff
+PRODUCT_PACKAGES += \
+    libhwbinder \
+    libhwbinder.vendor \
+    libhidltransport

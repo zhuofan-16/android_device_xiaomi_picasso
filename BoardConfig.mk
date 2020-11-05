@@ -43,7 +43,7 @@ BOARD_KERNEL_BASE := 0x0000
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 cgroup.memory=nokmem,nosocket loop.max_part=7 buildvariant=user
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_OFFSET := 0x1000000
 BOARD_KERNEL_SECOND_OFFSET := 0xf00000
@@ -51,12 +51,15 @@ BOARD_KERNEL_TAGS_OFFSET := 0x100
 BOARD_KERNEL_OFFSET := 0x00008000
 TARGET_KERNEL_ARCH := arm64
 # TODO: figure out why OSS DTB / DTBO do not work
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel-12.05-stable
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
 BOARD_KERNEL_SEPARATED_DTBO := false
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
-TARGET_KERNEL_CONFIG := vendor/picasso_user_defconfig
-TARGET_KERNEL_CLANG_COMPILE := true
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+  TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
+  TARGET_KERNEL_CONFIG := vendor/picasso_user_defconfig
+  TARGET_KERNEL_CLANG_COMPILE := true
+endif
 NEED_KERNEL_MODULE_SYSTEM:= true
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
@@ -88,6 +91,8 @@ BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := 16384
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
+BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_PRODUCTIMAGE_PARTITION_SIZE := 2147483648
 TARGET_COPY_OUT_PRODUCT := product
 BUILD_WITHOUT_VENDOR := true
 
@@ -103,15 +108,7 @@ TARGET_USES_MKE2FS := true
 
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR := $(DEVICE_PATH)/sepolicy/private
-
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/private \
-    device/qcom/sepolicy/qva/private
-
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/public \
-    device/qcom/sepolicy/qva/public
-
+include device/qcom/sepolicy/SEPolicy.mk
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
@@ -122,3 +119,12 @@ BOARD_VNDK_VERSION := current
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
+BOARD_AVB_VBMETA_SYSTEM := system
+BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
+BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
+BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
+BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA4096
+BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
+BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
