@@ -171,9 +171,9 @@ product/lib64/vendor.qti.imsrtpservice@2.1.so
 -product/lib/libspl.so
 -product/lib64/libspl.so
 
-# Soundfx - from guacamole QKQ1.190716.003
-product/vendor_overlay/29/lib/soundfx/libvolumelistener.so|e6c1f1bfb7bd5cfb36131aaff0d4e8c74833865d
-product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so|1b16cd00fd2144e860f99c0869c2db1489c789a2
+# Soundfx - from Nord-user 10 QKQ1.200412.002 2010231954 release-keys
+-vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib/soundfx/libvolumelistener.so
+-vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so
 
 # Soundfx
 vendor/lib64/soundfx/libdirac.so
