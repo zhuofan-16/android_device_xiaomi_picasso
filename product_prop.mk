@@ -15,6 +15,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     audio.offload.min.duration.secs=30 \
     audio.sys.offload.pstimeout.secs=3 \
     media.stagefright.audio.deep=false \
+    persist.vendor.audio.hifi=false \
     ro.af.client_heap_size_kbyte=7168 \
     ro.bluetooth.a2dp_offload.supported=false \
     persist.bluetooth.a2dp_offload.disabled=true \
