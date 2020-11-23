@@ -33,4 +33,7 @@
     <!-- Whether device supports refresh rate switch
          config_defaultPeakRefreshRate shouldn't be defined as 60 on frameworks/base -->
     <bool name="config_supportsRefreshRateSwitch">false</bool>
+
+    <!-- Whether to show Smooth Display feature in Settings Options -->
+    <bool name="config_show_smooth_display">true</bool>
 </resources>
