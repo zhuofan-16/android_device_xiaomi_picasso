@@ -136,6 +136,9 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_picasso
 
 # NFC
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/libnfc-nci.conf
+
 PRODUCT_PACKAGES += \
     NQNfcNci \
     com.nxp.nfc.nq \
