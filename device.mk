@@ -39,7 +39,8 @@ AB_OTA_UPDATER := false
 
 # ANT+
 PRODUCT_PACKAGES += \
-    AntHalService \
+    AntHalService-Soong \
+    com.dsi.ant.antradio_library \
     vendor.xiaomi.hardware.fingerprintextension@1.0
 
 # Audio
