@@ -168,10 +168,14 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     device/qcom/sepolicy/qva/public/attribute
 
 PRODUCT_PUBLIC_SEPOLICY_DIRS += \
-    device/qcom/sepolicy/product/public
+    device/qcom/sepolicy/product/public \
+    device/qcom/sepolicy/generic/product/public \
+    device/qcom/sepolicy/qva/product/public
 
 PRODUCT_PRIVATE_SEPOLICY_DIRS += \
-    device/qcom/sepolicy/product/private
+    device/qcom/sepolicy/product/private \
+    device/qcom/sepolicy/generic/product/private \
+    device/qcom/sepolicy/qva/product/private
 
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
