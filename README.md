@@ -1,13 +1,13 @@
-![AICP](https://raw.githubusercontent.com/AICP/vendor_aicp/q10.0/docs/xda_template/logo_black.png "AICP")
+![AOSP](https://img.xda-cdn.com/uuo_PxlZMCBRnD35yewzMtbM_-Y=/https%3A%2F%2Fi.imgur.com%2F0CwUbOx.png "AOSP")
 
-AICP 15.0 (Q) for Redmi K30 5G (picasso)
+AOSPExtended 8.0 (R) for Redmi K30 5G (picasso)
 ======================================
 
 # How to build
 
-Download AICP's source and picasso's repos. You can have a look at my manifest:
+Download AEX's source and picasso repos. You can have a look at my manifest:
 
-https://github.com/masemoel/local_manifests/blob/master/picasso_q.xml
+https://github.com/masemoel/local_manifests/blob/master/picasso_r.xml
 
 Then go to the source folder and run:
 

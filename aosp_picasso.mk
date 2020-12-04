@@ -18,7 +18,7 @@ $(call inherit-product, device/xiaomi/picasso/device.mk)
 $(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aicp_picasso
+PRODUCT_NAME := aosp_picasso
 PRODUCT_DEVICE := picasso
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30 5G
