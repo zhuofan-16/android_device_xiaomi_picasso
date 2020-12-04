@@ -22,8 +22,14 @@ PRODUCT_PRODUCT_PROPERTIES += \
     audio.sys.routing.latency=0 \
     audio.offload.min.duration.secs=30 \
     audio.sys.offload.pstimeout.secs=3 \
+    media.stagefright.audio.deep=false \
     ro.af.client_heap_size_kbyte=7168 \
-    media.stagefright.audio.deep=false
+    ro.bluetooth.a2dp_offload.supported=false \
+    persist.bluetooth.a2dp_offload.disabled=true \
+    persist.bluetooth.bluetooth_audio_hal.disabled=true \
+    persist.vendor.bt.a2dp.aac_whitelist=false \
+    persist.vendor.qcom.bluetooth.enable.splita2dp=false \
+    vendor.audio.feature.a2dp_offload.enable=false
 
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
