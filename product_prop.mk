@@ -3,14 +3,6 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-# Adb
-ifeq ($(TARGET_BUILD_VARIANT),eng)
-# /vendor/default.prop is force-setting ro.adb.secure=1
-# Get rid of that by overriding it in /product on eng builds
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.secure=0 \
-    ro.adb.secure=0
-endif
 
 # Audio
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -91,6 +83,13 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Smart fps switching
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.smart_dfps.enable=false
+
+# USB debugging
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1
 
 # Voice recording
 PRODUCT_PRODUCT_PROPERTIES += \
