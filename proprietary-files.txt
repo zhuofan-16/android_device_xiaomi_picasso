@@ -208,3 +208,4 @@ lib/libwfduibcsrcinterface.so
 -priv-app/WfdService/WfdService.apk
 product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 product/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
+
