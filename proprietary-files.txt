@@ -8,6 +8,10 @@ product/framework/vendor.qti.hardware.alarm-V1.0-java.jar
 product/lib/com.qualcomm.qti.ant@1.0.so
 product/lib64/com.qualcomm.qti.ant@1.0.so
 
+# aptX - from bramble-user 11 RD1A.200810.020
+-lib64/libaptX_encoder.so
+-lib64/libaptXHD_encoder.so
+
 # Bluetooth (aptX) - from coral-user 10 QQ3A.200805.001 6578210 release-keys
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
@@ -24,10 +28,6 @@ vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib/android.hardware.camera.provider@2.4-external.so
 vendor/lib/android.hardware.camera.provider@2.4-legacy.so
 vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
-
-# aptX - from bramble-user 11 RD1A.200810.020
--lib64/libaptX_encoder.so
--lib64/libaptXHD_encoder.so
 
 # DPM
 framework/tcmclient.jar
@@ -83,6 +83,7 @@ product/lib64/vendor.qti.imsrtpservice@2.1.so
 product/vendor_overlay/29/lib/soundfx/libvolumelistener.so|e6c1f1bfb7bd5cfb36131aaff0d4e8c74833865d
 product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so|1b16cd00fd2144e860f99c0869c2db1489c789a2
 
+# Soundfx
 vendor/lib64/soundfx/libdirac.so
 vendor/lib/soundfx/libdirac.so
 vendor/lib/soundfx/libmisoundfx.so
@@ -99,9 +100,6 @@ product/etc/permissions/telephonyservice.xml
 product/framework/qcrilhook.jar
 product/framework/QtiTelephonyServicelibrary.jar
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-
-# Telephony (qti-telephony-common)
-# Smali edited: Removed `miui.os.Build` dependency in `WifiManagerCompatible.isNeeded()`
 product/framework/qti-telephony-common.jar|d53c26a3df5ae5d3218caca05a89dcbaa9a1810f
 
 # WiFi Display
