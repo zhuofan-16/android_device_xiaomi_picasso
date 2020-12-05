@@ -145,18 +145,17 @@ product/lib64/libdpmtcm.so
 # FM
 lib/fm_helium.so
 lib/libfm-hci.so
-lib/vendor.qti.hardware.fm@1.0.so
 lib64/fm_helium.so
 lib64/libfm-hci.so
-lib64/vendor.qti.hardware.fm@1.0.so
+product/lib/vendor.qti.hardware.fm@1.0.so
+product/lib64/vendor.qti.hardware.fm@1.0.so
 
 # HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|e5900045843f01264479e98221e1481781ca429b
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|369a9a1578c18762e583a31ac916ec866c7e0719
 
 # IMS
-# ims.apk: patched ImsServiceStateReceiver.shallShowHDIcon() to always return false
--product/priv-app/ims/ims.apk|600c6d03c03f88f35c51ba8e6b1a4cb7d70b94e6
+-product/priv-app/ims/ims.apk|ce4b30992c383ded08eeae50d9c7c46bec3093d8
 product/lib64/libdiag_system.so
 product/lib64/libimscamera_jni.so
 product/lib64/libimsmedia_jni.so
@@ -168,12 +167,12 @@ product/lib64/vendor.qti.imsrtpservice@2.0.so
 product/lib64/vendor.qti.imsrtpservice@2.1.so
 
 # QSEECOMD - from coral-user 11 RP1A.201105.002 6869500 release-keys
--product/lib/libspl.so
--product/lib64/libspl.so
+-product/lib/libspl.so|7e3ab5ebb1786b6e272ae22aa37019dded979c49
+-product/lib64/libspl.so|f24699732219695cc2d870b8ceeb267c7185300f
 
 # Soundfx - from Nord-user 10 QKQ1.200412.002 2010231954 release-keys
--vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib/soundfx/libvolumelistener.so
--vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so
+-vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib/soundfx/libvolumelistener.so|a281e523ba36f363b7be9393db861331e1817b62
+-vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so|40672b3918f793b0d764f1958b6421d4e6f87f65
 
 # Soundfx
 vendor/lib64/soundfx/libdirac.so
