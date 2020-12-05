@@ -89,8 +89,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=11
 
 # Netflix
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.netflix.bsp_rev=Q7250-19133-1
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.netflix.bsp_rev=Q855-16947-1
 
 # RCS
 PRODUCT_PRODUCT_PROPERTIES += \
