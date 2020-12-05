@@ -161,27 +161,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USES_MKE2FS := true
 
-# Sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/private \
-    device/qcom/sepolicy/qva/private \
-    $(DEVICE_PATH)/sepolicy/private
-
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/public \
-    device/qcom/sepolicy/generic/public/attribute \
-    device/qcom/sepolicy/qva/public \
-    device/qcom/sepolicy/qva/public/attribute
-
-PRODUCT_PUBLIC_SEPOLICY_DIRS += \
-    device/qcom/sepolicy/product/public \
-    device/qcom/sepolicy/generic/product/public \
-    device/qcom/sepolicy/qva/product/public
-
-PRODUCT_PRIVATE_SEPOLICY_DIRS += \
-    device/qcom/sepolicy/product/private \
-    device/qcom/sepolicy/generic/product/private \
-    device/qcom/sepolicy/qva/product/private
+# SEPolicy
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR := $(DEVICE_PATH)/sepolicy/private
+include device/qcom/sepolicy/SEPolicy.mk
 
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
