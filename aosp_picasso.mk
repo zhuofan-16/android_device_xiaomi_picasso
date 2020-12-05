@@ -5,7 +5,7 @@
 #
 
 # ANXCamera
-$(call inherit-product, vendor/ANXCamera/config.mk)
+$(call inherit-product, vendor/aeonax/ANXCamera/anx-vendor.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -13,8 +13,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from picasso device
 $(call inherit-product, device/xiaomi/picasso/device.mk)
 
-# Inherit some common AICP stuff.
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+# Inherit some common AEX stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_picasso
