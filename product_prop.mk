@@ -25,6 +25,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     media.stagefright.audio.deep=false \
     ro.af.client_heap_size_kbyte=7168
 
+# Blurs
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.surface_flinger.supports_background_blur=1 \
+    ro.sf.blurs_are_expensive=1
+
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.camera.privapp.list=org.codeaurora.snapcam,com.google.android.GoogleCamera,com.android.camera \
