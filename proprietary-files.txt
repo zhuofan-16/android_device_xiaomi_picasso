@@ -27,7 +27,6 @@ lib/android.hardware.camera.device@3.4.so|2265914782ef823663b91335aacd378f5bf2a7
 lib/android.hardware.camera.provider@2.4.so|be4a965604faea7a16c9aaf5b18030de0d0a3c53
 lib/android.hardware.camera.provider@2.5.so|336ab3fd1b2f6b14f3719fb08237d97e5c2cdbca
 lib/android.hardware.camera.provider@2.6.so|c15d0d18cae567bf1d8b1aa71f05376cc2347469
-system_ext/lib/vendor.qti.hardware.camera.device@3.5.so|37507e7f0fc7a8752d461a4dd85c2dd31fd1afa6
 
 # CarrierConfig | from  Coral RPB2.200611.009-6625208-release-keys
 product/etc/CarrierSettings/airtel_in.pb|e48ca8834f30e74a1a1a42d1041bb97fdf0f5b58
