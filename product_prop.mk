@@ -72,6 +72,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.lcd_density=440
 
+# LMKD
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.low_ram = false
+
 # Face Unlock
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.face.moto_unlock_service.cam_id=5
