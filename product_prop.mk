@@ -15,7 +15,13 @@ PRODUCT_PRODUCT_PROPERTIES += \
     audio.offload.min.duration.secs=30 \
     audio.sys.offload.pstimeout.secs=3 \
     media.stagefright.audio.deep=false \
-    ro.af.client_heap_size_kbyte=7168
+    ro.af.client_heap_size_kbyte=7168 \
+    ro.bluetooth.a2dp_offload.supported=false \
+    persist.bluetooth.a2dp_offload.disabled=true \
+    persist.bluetooth.bluetooth_audio_hal.disabled=true \
+    vendor.audio.feature.a2dp_offload.enable=false \
+    persist.vendor.qcom.bluetooth.enable.splita2dp=false \
+    persist.vendor.bt.a2dp.aac_whitelist=false
 
 # Blurs
 PRODUCT_PRODUCT_PROPERTIES += \
