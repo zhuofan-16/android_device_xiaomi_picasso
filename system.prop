@@ -20,7 +20,7 @@ ro.vendor.bcbc.enable=false
 ro.vendor.dfps.enable=true
 
 #for CTS fps
-ro.vendor.display.default_fps=60
+ro.vendor.display.default_fps=120
 
 # qcom prop,idle timeout, non-idle switch to idle time
 vendor.display.idle_time=1100
@@ -56,3 +56,8 @@ persist.vendor.radio.report_codec=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
+# Sensors
+persist.vendor.sensors.enable.mag_filter=true
+
+# OEM Unlock
+ro.oem_unlock_supported=0
