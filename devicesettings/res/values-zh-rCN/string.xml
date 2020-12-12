@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-<resources>
     <string name="device_specific_settings_title">高级设置</string>
     <string name="device_specific_settings_summary">红米K30 5G 的专属设置~(由可爱的寒寒翻译)</string>
     <string name="device_min_refresh_rate">刷新率</string>
