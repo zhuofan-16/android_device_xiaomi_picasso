@@ -20,10 +20,10 @@
         <item>144 Hz</item>
     </string-array>
     <string-array name="device_refresh_rates_val">
-        <item>30 Hz</item>
-        <item>60 Hz</item>
-        <item>90 Hz</item>
-        <item>120 Hz</item>
-        <item>144 Hz</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>144</item>
     </string-array>
 </resources>
