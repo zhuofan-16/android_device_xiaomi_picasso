@@ -5,7 +5,7 @@
 #
 
 # ANXCamera
-$(call inherit-product, vendor/aeonax/ANXCamera/anx-vendor.mk)
+$(call inherit-product-if-exists, vendor/aeonax/ANXCamera/anx-vendor.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -13,20 +13,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from picasso device
 $(call inherit-product, device/xiaomi/picasso/device.mk)
 
-# Inherit some common AEX stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+# Inherit some common LegionOS stuff.
+$(call inherit-product, vendor/legion/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_picasso
+PRODUCT_NAME := legion_picasso
 PRODUCT_DEVICE := picasso
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30 5G
 PRODUCT_MANUFACTURER := Redmi
 
-# PixelGApps
-TARGET_GAPPS_ARCH := arm64
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_STOCK_ARCORE := true
+# Google Apps
+WITH_GAPPS=true
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080

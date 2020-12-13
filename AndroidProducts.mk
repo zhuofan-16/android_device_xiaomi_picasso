@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_picasso.mk
+    $(LOCAL_DIR)/legion_picasso.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_picasso-eng \
-    aosp_picasso-userdebug \
-    aosp_picasso-user
+    legion_picasso-eng \
+    legion_picasso-userdebug \
+    legion_picasso-user

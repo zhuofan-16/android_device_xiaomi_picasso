@@ -1,11 +1,11 @@
-![AOSP](https://img.xda-cdn.com/uuo_PxlZMCBRnD35yewzMtbM_-Y=/https%3A%2F%2Fi.imgur.com%2F0CwUbOx.png "AOSP")
+![Legion](https://raw.githubusercontent.com/Project-LegionOS/xda_template/10/logos/legion.jpg "Legion")
 
-AOSPExtended 8.0 (R) for Redmi K30 5G (picasso)
+LegionOS 3.4 (A11/R) for Redmi K30 5G (picasso)
 ======================================
 
 # How to build
 
-Download AEX's source and picasso repos. You can have a look at my manifest:
+Download LegionOS's source and picasso repos. You can have a look at my manifest:
 
 https://github.com/masemoel/local_manifests/blob/master/picasso_r.xml
 
@@ -13,7 +13,8 @@ Then go to the source folder and run:
 
 ```bash
 . build/envsetup.sh
-brunch picasso
+lunch legion_picasso-userdebug
+make legion
 ```
 
 # Device specifications
