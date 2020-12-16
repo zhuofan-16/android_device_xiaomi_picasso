@@ -29,6 +29,9 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.google.android.GoogleCa
 # Charger Mode
 ro.charger.enable_suspend=true
 
+# Face unlock
+ro.face.moto_unlock_service.cam_id=5
+
 # Graphics
 debug.sf.early_app_phase_offset_ns=500000
 debug.sf.early_gl_app_phase_offset_ns=15000000
@@ -75,8 +78,8 @@ ro.sf.lcd_density=440
 # LMKD
 ro.config.low_ram = false
 
-# Face unlock
-ro.face.moto_unlock_service.cam_id=5
+# Shutdown
+ro.build.shutdown_timeout=2
 
 # Smart fps switch
 ro.vendor.smart_dfps.enable=false
