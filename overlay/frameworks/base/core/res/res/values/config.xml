@@ -801,4 +801,7 @@
 
     <!-- Smart charging -->
     <bool name="config_smartChargingAvailable">true</bool>
+
+    <!-- ImsService package name to bind to by default, if config_dynamic_bind_ims is true -->
+    <string name="config_ims_package">org.codeaurora.ims</string>
 </resources>
