@@ -100,7 +100,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
     ro.secure=0 \
     ro.debuggable=1
-
-# Voice recording
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.vendor.audio.fluence.voicerec=true

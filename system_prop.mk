@@ -88,10 +88,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.media_vol_steps=30 \
     ro.config.vc_call_vol_steps=11
 
-# Netflix
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.netflix.bsp_rev=Q855-16947-1
-
 # RCS
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.rcs.supported=1
