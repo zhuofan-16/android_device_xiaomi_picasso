@@ -140,6 +140,7 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc@1.1:64 \
     android.hardware.nfc@1.2:64 \
     android.hardware.secure_element@1.0:64 \
+    com.gsma.services.nfc \
     com.android.nfc_extras \
     vendor.nxp.nxpese@1.0:64 \
     vendor.nxp.nxpnfc@1.0:64
