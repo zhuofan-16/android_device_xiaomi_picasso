@@ -132,10 +132,6 @@ lib64/fm_helium.so
 lib64/libfm-hci.so
 lib64/vendor.qti.hardware.fm@1.0.so
 
-# HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
-
 # IMS
 # ims.apk: patched ImsServiceStateReceiver.shallShowHDIcon() to always return false
 product/priv-app/ims/ims.apk
