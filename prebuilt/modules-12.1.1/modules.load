@@ -20,7 +20,6 @@ audio_wcd938x_slave.ko
 audio_wcd937x.ko
 audio_wcd937x_slave.ko
 audio_cs35l41.ko
-audio_tfa98xx.ko
 audio_bolero_cdc.ko
 audio_wsa_macro.ko
 audio_va_macro.ko
@@ -33,6 +32,7 @@ lcd.ko
 llcc_perfmon.ko
 mpq-adapter.ko
 mpq-dmx-hw-plugin.ko
+audio_tfa98xx.ko
 fragmentize.ko
 exfat.ko
 qca_cld3_wlan.ko
