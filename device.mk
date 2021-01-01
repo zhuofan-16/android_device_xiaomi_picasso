@@ -70,7 +70,14 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    BluetoothQti
+    BluetoothQti \
+    libbluetooth_qti \
+    libbtconfigstore \
+    bt_configstore.conf \
+    com.qualcomm.qti.bluetooth_audio@1.0 \
+    vendor.qti.hardware.bluetooth_audio@2.0 \
+    vendor.qti.hardware.btconfigstore@1.0 \
+    vendor.qti.hardware.btconfigstore@2.0
 
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
