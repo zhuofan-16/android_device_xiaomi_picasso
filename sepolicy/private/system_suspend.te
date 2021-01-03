@@ -1,0 +1,3 @@
+allow system_suspend sysfs:dir { ioctl read getattr lock open watch watch_reads search };
+allow system_suspend sysfs:file { ioctl read getattr lock map open watch watch_reads };
+allow system_suspend sysfs:lnk_file { ioctl read getattr lock map open watch watch_reads };
