@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # ANXCamera
-$(call inherit-product-if-exists, vendor/ANXCamera/config.mk)
+$(call inherit-product-if-exists, vendor/aeonax/ANXCamera/anx-vendor.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
