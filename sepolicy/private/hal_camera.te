@@ -1,0 +1,1 @@
+allow hal_camera vendor_hal_qspmhal_hwservice:hwservice_manager find;
