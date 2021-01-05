@@ -15,4 +15,11 @@ type sysfs_battery_supply, sysfs_type, fs_type;
 type sysfs_device_info, sysfs_type, fs_type;
 type sysfs_graphics, sysfs_type, fs_type;
 type sysfs_kgsl, sysfs_type, fs_type;
+type sysfs_memory, sysfs_type, fs_type;
 type sysfs_usb_supply, sysfs_type, fs_type;
+
+# vendor
+type vendor_capabilityconfigstore_data_file, file_type, data_file_type;
+type vendor_debugfs_ipc, debugfs_type, fs_type;
+type vendor_diag_device, dev_type;
+type vendor_sysfs_kgsl, sysfs_type, fs_type;
