@@ -1,12 +1,22 @@
-<manifest version="1.0" type="framework">
-    <hal format="hidl" override="true">
-        <name>android.hardware.secure_element</name>
+<!--
+    Input:
+        manifest.xml
+        framework_manifest.xml
+-->
+<manifest version="2.0" type="framework">
+    <hal format="hidl">
+        <name>vendor.qti.hardware.radio.atcmdfwd</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>ISecureElement</name>
-            <regex-instance>SIM[1-9][0-9]*</regex-instance>
-            <regex-instance>eSE[1-9][0-9]*</regex-instance>
+            <name>IAtCmdFwd</name>
+            <instance>AtCmdFwdService</instance>
         </interface>
+        <fqname>@1.0::IAtCmdFwd/AtCmdFwdService</fqname>
     </hal>
+    <system-sdk>
+        <version>28</version>
+        <version>29</version>
+        <version>30</version>
+    </system-sdk>
 </manifest>
