@@ -42,8 +42,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
-    com.dsi.ant@1.0 \
-    vendor.xiaomi.hardware.fingerprintextension@1.0
+    com.dsi.ant@1.0
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -118,12 +117,20 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libvulkan \
     vendor.display.config@1.0 \
+    vendor.display.config@1.2 \
+    vendor.display.config@1.3 \
+    vendor.display.config@1.5 \
     vendor.display.config@2.0 \
     vendor.qti.hardware.display.composer@3.0
 
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1 \
+    vendor.xiaomi.hardware.fingerprintextension@1.0
 
 # fstab
 PRODUCT_COPY_FILES += \
@@ -217,8 +224,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
-# QTI VNDK Framework Detect
 PRODUCT_PACKAGES += \
+    vendor.qti.hardware.systemhelper@1.0 \
     libvndfwk_detect_jni.qti \
     libqti_vndfwk_detect
 
@@ -236,7 +243,10 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml \
-	android.hardware.radio@1.4 \
+    android.hardware.radio@1.4 \
+    android.hardware.radio.config@1.0 \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.secure_element@1.0 \
     telephony-ext 
 
 PRODUCT_BOOT_JARS += \
