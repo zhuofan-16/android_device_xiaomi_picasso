@@ -96,6 +96,18 @@ system_ext/lib64/vendor.qti.gnss@4.0.so
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar|0492cd3db2e253e23b78e56fa8ea7b3a4b15edeb
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
 
+# Public libraries
+system_ext/etc/public.libraries-qti.txt
+system_ext/lib/libqvrcamera_client.qti.so
+system_ext/lib/libqvrservice_client.qti.so
+system_ext/lib/libupdateprof.qti.so
+system_ext/lib/vendor.qti.qspmhal@1.0.so
+system_ext/lib64/libQOC.qti.so
+system_ext/lib64/libqvrcamera_client.qti.so
+system_ext/lib64/libqvrservice_client.qti.so
+system_ext/lib64/libupdateprof.qti.so
+system_ext/lib64/vendor.qti.qspmhal@1.0.so
+
 # QMI
 system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
