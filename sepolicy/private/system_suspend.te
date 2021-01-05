@@ -1,3 +1,6 @@
-allow system_suspend sysfs:dir { ioctl read getattr lock open watch watch_reads search };
-allow system_suspend sysfs:file { ioctl read getattr lock map open watch watch_reads };
-allow system_suspend sysfs:lnk_file { ioctl read getattr lock map open watch watch_reads };
+allow system_suspend sysfs:dir r_dir_perms;
+allow system_suspend sysfs:file r_file_perms;
+allow system_suspend sysfs_battery_supply:dir r_dir_perms;
+allow system_suspend sysfs_battery_supply:file r_file_perms;
+allow system_suspend sysfs_rtc:dir r_dir_perms;
+allow system_suspend sysfs_rtc:file r_file_perms;
