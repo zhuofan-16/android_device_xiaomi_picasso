@@ -26,6 +26,9 @@ persist.camera.privapp.list=org.codeaurora.snapcam,com.google.android.GoogleCame
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.google.android.GoogleCamera,com.android.camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.google.android.GoogleCamera,com.android.camera
 
+# Charger Mode
+ro.charger.enable_suspend=true
+
 # Graphics
 debug.sf.early_app_phase_offset_ns=500000
 debug.sf.early_gl_app_phase_offset_ns=15000000
