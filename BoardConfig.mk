@@ -174,7 +174,6 @@ TARGET_USES_MKE2FS := true
 # SEPolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR := $(DEVICE_PATH)/sepolicy/private
 include device/qcom/sepolicy/SEPolicy.mk
-TARGET_USES_PREBUILT_VENDOR_SEPOLICY := true
 
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
