@@ -95,17 +95,14 @@ static void workaround_snet_properties() {
 	for (int i = 0; snet_prop_key[i]; ++i) {
 		property_override(snet_prop_key[i], snet_prop_value[i]);
 	}
-
-	chmod("/sys/fs/selinux/enforce", 0640);
-	chmod("/sys/fs/selinux/policy", 0440);
 }
 
 void vendor_load_properties()
 {
 	property_override("vendor.audio.feature.spkr_prot.enable", "false");
 	property_override("ro.control_privapp_permissions", "log");
-	property_override_dual("ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "google/sunfish/sunfish:11/RP1A.201105.002/6869500:user/release-keys");
-	property_override_dual("ro.build.fingerprint", "ro.product.build.fingerprint", "google/sunfish/sunfish:11/RP1A.201105.002/6869500:user/release-keys");
+	property_override_dual("ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "google/sunfish/sunfish:11/RQ1A.210105.003/7005429:user/release-keys");
+	property_override_dual("ro.build.fingerprint", "ro.product.build.fingerprint", "google/sunfish/sunfish:11/RQ1A.210105.003/7005429:user/release-keys");
 
 	// Workaround SafetyNet
 	workaround_snet_properties();
