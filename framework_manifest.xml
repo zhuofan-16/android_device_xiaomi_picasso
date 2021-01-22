@@ -5,16 +5,6 @@
 -->
 <manifest version="2.0" type="framework">
     <hal format="hidl">
-        <name>vendor.qti.hardware.radio.atcmdfwd</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IAtCmdFwd</name>
-            <instance>AtCmdFwdService</instance>
-        </interface>
-        <fqname>@1.0::IAtCmdFwd/AtCmdFwdService</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.sigma_miracast</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
