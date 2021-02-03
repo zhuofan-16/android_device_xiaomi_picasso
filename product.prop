@@ -84,6 +84,3 @@ ro.build.shutdown_timeout=2
 
 # Smart fps switch
 ro.vendor.smart_dfps.enable=false
-
-# USB debugging
-ro.adb.secure=1
