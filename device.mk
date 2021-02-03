@@ -8,8 +8,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# ANXCamera
-$(call inherit-product-if-exists, vendor/aeonax/ANXCamera/anx-vendor.mk)
+# MIUI Camera
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
 # All components inherited here go to system_ext image
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
