@@ -91,6 +91,9 @@ persist.dbg.wfc_avail_ovr=1
 # Initialize QCA1530 detection
 sys.qca1530=detect
 
+# LCD density
+ro.sf.lcd_density=440
+
 # Media
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank.sw-audio=16

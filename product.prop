@@ -73,9 +73,6 @@ vendor.gralloc.disable_ubwc=0
 # Hax
 ro.control_privapp_permissions=log
 
-# LCD density
-ro.sf.lcd_density=440
-
 # LMKD
 ro.config.low_ram = false
 
