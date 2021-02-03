@@ -262,7 +262,9 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libnl
+    libnl \
+    libqdMetaData \
+    libqdMetaData.system
 
 # XiaomiParts
 PRODUCT_PACKAGES += \
