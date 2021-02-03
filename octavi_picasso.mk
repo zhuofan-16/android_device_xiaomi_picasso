@@ -4,12 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# ANXCamera
-$(call inherit-product-if-exists, vendor/aeonax/ANXCamera/anx-vendor.mk)
-
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
 # Inherit from picasso device
 $(call inherit-product, device/xiaomi/picasso/device.mk)
 
