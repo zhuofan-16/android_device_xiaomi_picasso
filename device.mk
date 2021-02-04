@@ -20,6 +20,8 @@ PRODUCT_BUILD_PRODUCT_IMAGE := true
 
 # Properties
 include $(LOCAL_PATH)/product_prop.mk
+include $(LOCAL_PATH)/system_prop.mk
+include $(LOCAL_PATH)/system.prop
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # No A/B
@@ -110,5 +112,3 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 # Camera
-PRODUCT_PACKAGES += \
-    Snap

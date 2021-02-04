@@ -19,18 +19,8 @@ ro.vendor.cabc.enable=true
 ro.vendor.bcbc.enable=false
 ro.vendor.dfps.enable=true
 
-# Display
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.colorpick_adjust=true \
-    ro.vendor.all_modes.colorpick_adjust=true \
-    ro.vendor.xiaomi.bl.poll=true \
-    ro.vendor.histogram.enable=false \
-    ro.vendor.cabc.enable=true \
-    ro.vendor.bcbc.enable=false \
-    ro.vendor.dfps.enable=true \
-    ro.vendor.display.sensortype=2 \
-    ro.vendor.display.default_fps=120 \
-    ro.vendor.fps.switch.default=true \
+#for CTS fps
+ro.vendor.display.default_fps=120
 
 # qcom prop,idle timeout, non-idle switch to idle time
 vendor.display.idle_time=1100
@@ -43,7 +33,7 @@ sys.displayfeature_hidl=true
 
 vendor.hbm.enable=true
 
-#FP
+# FP
 ro.fingerprint.cleanup.unused=false
 
 # USB debugging
@@ -55,23 +45,8 @@ ro.debuggable=1
 # Zygote preforking
 persist.device_config.runtime_native.usap_pool_enabled=true
 
-# RIL
-rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
-DEVICE_PROVISIONED=1
-ril.subscription.types=NV,RUIM
-ro.telephony.default_network=22,22
-telephony.lteOnCdmaDevice=1
-persist.vendor.radio.redir_party_num=1
-persist.vendor.radio.report_codec=1
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
 # OEM Unlock
 ro.oem_unlock_supported=0
-
-# Netflix
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.netflix.bsp_rev=Q855-16947-1
