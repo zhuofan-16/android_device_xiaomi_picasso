@@ -29,8 +29,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.bcbc.enable=false \
     ro.vendor.dfps.enable=true \
     ro.vendor.display.sensortype=2 \
-    ro.vendor.display.default_fps=120 \
-    ro.vendor.fps.switch.default=true \
 
 # qcom prop,idle timeout, non-idle switch to idle time
 vendor.display.idle_time=1100
