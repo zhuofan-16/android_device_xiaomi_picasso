@@ -3,8 +3,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-#ANX CAMERA
-$(call inherit-product, vendor/ANXCamera/config.mk)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
