@@ -68,21 +68,7 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor \
     libhidltransport
 
-# Bluetooth
-PRODUCT_PACKAGES += \
-    libbluetooth_qti \
-    libbtconfigstore \
-    bt_configstore.conf \
-    com.qualcomm.qti.bluetooth_audio@1.0 \
-    vendor.qti.hardware.bluetooth_audio@2.0 \
-    vendor.qti.hardware.btconfigstore@1.0 \
-    vendor.qti.hardware.btconfigstore@2.0
-
-PRODUCT_SOONG_NAMESPACES += \
-    hardware/google/pixel \
-    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
-    vendor/qcom/opensource/commonsys/system/bt/conf
-
+# Bluetoot
 # Camera
 PRODUCT_PACKAGES += \
     android.hidl.memory.block@1.0
@@ -169,20 +155,14 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_picasso
 
 # NFC
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/libnfc-nci.conf
-
+# NFC
 PRODUCT_PACKAGES += \
-    NQNfcNci \
-    com.nxp.nfc.nq \
-    android.hardware.nfc@1.0:64 \
-    android.hardware.nfc@1.1:64 \
-    android.hardware.nfc@1.2:64 \
-    android.hardware.secure_element@1.0:64 \
-    com.gsma.services.nfc \
     com.android.nfc_extras \
-    vendor.nxp.nxpese@1.0:64 \
-    vendor.nxp.nxpnfc@1.0:64
+    com.gsma.services.nfc \
+    NfcNci \
+    SecureElement \
+    android.hardware.secure_element@1.0 \
+    Tag
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \

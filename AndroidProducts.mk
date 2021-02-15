@@ -5,9 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_picasso.mk
-
-COMMON_LUNCH_CHOICES := \
-    octavi_picasso-eng \
-    octavi_picasso-userdebug \
-    octavi_picasso-user
+    $(LOCAL_DIR)/dot_picasso.mk
